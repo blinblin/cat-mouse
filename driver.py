@@ -5,7 +5,7 @@ from Vector  import *                  # Import everything from our Vector
 from WalkingTurtle import *
 from Statue import Statue
 from Mouse import Mouse
-from Cat import Cat
+import Cat
 
 meter = 20        # How many pixels is one meter?
 statue_radius = 1# What is the statue's radius
@@ -22,7 +22,7 @@ arena.pack()                           # Tell arena to pack itself on screen
 s = Statue(Vector(200,200),statue_radius,meter)
 arena.add(s)
 m = Mouse(s,mouse_angle)
-c = Cat(cat_angle,cat_radius,m)
+c = Cat.Cat(cat_angle,cat_radius,m)
 arena.add(c)
 arena.add(m)
 arena.cat_rad.set('CatRadius: '+str(cat_radius))
